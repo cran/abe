@@ -4,15 +4,25 @@
 \alias{abe.fact1}
 \title{ABE for model which includes categorical covariates, factor option}
 \usage{
-abe.fact1(fit, data, include = NULL, active = NULL, tau = 0.05,
-  exp.beta = TRUE, exact = FALSE, criterion = "alpha", alpha = 0.2,
-  type.test = "Chisq", verbose = T)
+abe.fact1(
+  fit,
+  data,
+  include = NULL,
+  active = NULL,
+  tau = 0.05,
+  exp.beta = TRUE,
+  exact = FALSE,
+  criterion = "alpha",
+  alpha = 0.2,
+  type.test = "Chisq",
+  verbose = TRUE
+)
 }
 \description{
 ABE for model which includes categorical covariates, factor option
 }
 \examples{
-\dontshow{
+\dontrun{
 set.seed(1)
 n=100
 x1<-runif(n)
